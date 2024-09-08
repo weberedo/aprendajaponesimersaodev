@@ -1,4 +1,4 @@
-Bem-vindo! 😊
+Bem-vindo e bem-vinda! 😊
 
 Acesse o meu site aqui: https://eduardoweb.dev/ 
 
