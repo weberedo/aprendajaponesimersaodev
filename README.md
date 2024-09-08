@@ -20,6 +20,6 @@ O projeto foi feito para a Imersão dev da Alura + Gemini. Não utilizei APIs, b
 ## Disclaimer
 
 - A lista de animes inclui 1119 títulos.
-- Se você já possui conhecimentos básicos de japonês, pode começar a usar os baralhos de Anki. Caso contrário, recomendamos seguir o guia para alcançar um nível que permita utilizar os baralhos de forma mais eficaz.
+- Se você já possui conhecimentos básicos de japonês, pode começar a usar os baralhos de Anki. Caso contrário, recomendo ler o meu guia para alcançar um nível que permita utilizar os baralhos de forma mais eficaz.
 
 
