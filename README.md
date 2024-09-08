@@ -1,4 +1,6 @@
-Bem-vindo!    
+Bem-vindo! 😊
+
+Acesse o meu site aqui: https://eduardoweb.dev/ 
 
 Este é um site projetado para ajudar você a aprender japonês utilizando seus animes favoritos. Com ele, você pode explorar uma lista de animes e encontrar baralhos do anki contendo seu vocabulário, e pode aprender japonês usando o guia que escrevi. 
 O projeto foi feito para a Imersão dev da Alura + Gemini. Não utilizei APIs, bancos dados ou tecnologias mais complexas, tentei fazer o site usando o conteúdo que aprendemos durante a imersão. Mas futuramente pretendo incrementar o projeto, usar um banco de dados, implementar uma API de dicionário e muito mais!
