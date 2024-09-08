@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aprendendo Japonês</title>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- Vídeo de fundo -->
+            <video id="background-video" autoplay muted loop>
+                <source src="imeeji/background/backgroundvid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            
+            <div class="container">
+                <h1>Bem-vindo! ようこそ！</h1>
+                <p class="intro-text">Quer aprender japonês com seu anime favorito? Então siga estes passos:</p>
+                <br>
+
+                
+                <ol class="welcomeinstructions">
+                    <li>Digite o nome do anime na barra de pesquisa logo abaixo</li>
+                    <li>Veja o nível de dificuldade e o vocabulário usado no anime. Você também pode baixar baralhos de Anki prontos para estudo!</li>
+                    <li>Se o anime escolhido não tiver um baralho de Anki, ensinarei como criar o seu próprio.</li>
+                </ol>
+
+                <!-- Botões e barra de pesquisa -->
+                <div id="search-section">
+                    <input id="searchbar" type="text" placeholder="Digite o nome do anime">
+                    <input class="button" type="submit" value="Pesquisar" onclick="searchAnime()">
+                    <button id="hideButton" class="button hidden" onclick="hideResults()">Ocultar Resultados</button>
+                </div>
+
+                
+                <div class="instructions">
+                    <p>Não tem ideia do que é Anki? &#128064; Não entende bulhufas de japonês? &#128552; Não se preocupe! É só conferir o guia abaixo para começar do zero até a fluência!</p>
+                </div>
+
+                <!-- Seção de exibição de resultados -->
+                <div id="result">
+                    <!-- Os resultados da pesquisa serão exibidos aqui -->
+
+                </div>
+
+               
+                <div class="disclaimer">
+                    <h2>Disclaimer</h2>
+                    <li>Atualmente, a lista de animes é de 1119 títulos;</li>
+                    <li>Se você já sabe Hiragana, Katakana e o básico de gramática, já pode baixar o baralho do seu anime favorito e começar a estudar. Do contrário, recomendo ler o guia abaixo para alcançar um nível que lhe permita utilizar os baralhos de Anki mais efetivamente. </li>
+                </div>
+                <!-- Seção do guia para aprender japonês -->
+                <div id="guide-section">
+                    <h2>Guia para Aprender Japonês</h2>
+                    <p>Este guia irá ajudá-lo a aprender japonês do básico até o nível avançado! &#128640;</p>
+
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>1. Primeiramente: o que é Anki?</h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>O Anki é um software de flashcards que usa o sistema de <a href="https://blog.duolingo.com/pt/repeticao-espacada-no-aprendizado/" target="_blank">repetição espaçada</a> para ajudar na memorização de informações. Em resumo, você cria cartas no Anki com as informações que deseja memorizar. Quando você está perto do tempo esperado para esquecer aquela informação, a carta aparecerá para você revisar. Se acertar, a carta será exibida com menos frequência; se errar, a carta reaparecerá mais cedo. Uma carta bem memorizada pode levar mais de um ano para reaparecer. Confie em mim, o Anki vai facilitar muito a sua vida!</p>
+                            <br>
+                            <p>Primeiramente, acesse <a href="https://apps.ankiweb.net/" target="_blank">este link</a> e baixe o Anki para o seu computador (a versão para celular está disponível na Play Store/App Store). Se você nunca usou o Anki, recomendo dar uma olhada <a href="https://www.skillshare.com/pt/blog/a-melhor-maneira-de-usar-o-anki/" target="_blank">neste guia</a> para ter uma noção básica de como utilizá-lo. Você pode criar suas próprias cartas manualmente, baixar baralhos já prontos ou usar o método que vou ensinar agora. Com algumas ferramentas, você pode criar cartas no Anki automaticamente a partir de <strong>áudio, imagens e texto de animes, filmes ou séries</strong>. Cada frase dita por um personagem pode ser transformada em uma carta separada, com áudio, texto e imagem da cena correspondente. Estudando um episódio dessa forma e absorvendo o conteúdo, você conseguirá assisti-lo sem legendas depois. Veja <a href="https://animecards.site/minefromanime/" target="_blank">este guia</a> para entender como fazer isso com episódios de anime. Se achar muito trabalhoso, você pode simplesmente baixar os baralhos já fornecidos pela comunidade! &#128521;</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>2. Os sistemas de escrita do japonês: Hiragana, Katakana e Kanji</h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>O japonês utiliza três sistemas de escrita: Hiragana, Katakana e Kanji. Hiragana é usado para palavras nativas e partículas, Katakana para palavras estrangeiras, e Kanji são caracteres de origem chinesa que representam conceitos e palavras. Todos os três sistemas podem ser usados na mesma frase, e é essencial dominar todos eles. Você pode aprender Hiragana e Katakana em uma semana, se se dedicar, mas o aprendizado de Kanji será um processo contínuo, pois há milhares de caracteres e nem mesmo os japoneses conhecem todos.</p>
+
+                            <p>O que eu recomendo é:</p>
+                            
+                            <ol>
+                                <li>Aprenda Hiragana - assista <a href="https://www.youtube.com/watch?v=CaVyrOI4Bog&list=PLAF103AF88AD2E07D" target="_blank">esta playlist</a>.</li>
+                                <li>Aprenda Katakana - assista <a href="https://www.youtube.com/watch?v=q3QToWr-GS0&list=PL5032B2BE1CD0F7E1" target="_blank">esta playlist</a>.</li>
+                            </ol>
+                            
+                            <p>Recomendo que você aprenda e escreva Hiragana e Katakana à mão, pois isso ajudará a fixar melhor na memória e são poucos caracteres. No entanto, não sugiro fazer o mesmo com Kanji, pois o tempo gasto seria excessivo e você provavelmente não precisará escrever muito além do seu nome em japonês à mão. Se optar por escrever à mão e aprender os Kanji separadamente, você aprenderá melhor, mas acredito que o custo-benefício não é muito vantajoso.</p>
+                            <br>
+                            
+                            <p>Então, como aprender Kanji? Pois bem, eu recomendo aprendê-los no contexto de palavras, e não individualmente. Por exemplo, a palavra "水気" (mizuke) significa "umidade".</p>
+                            <br>
+                            <p>O Kanji "水" pode ser lido como "mizu" ou "sui" e significa "água". O Kanji "気" tem significados como "vontade, disposição, ânimo, intenção, espírito, coração, essência, cheiro, fragrância, gosto, atmosfera, ar, ambiente" e pode ser lido como "ki" e "ke" (e há kanjis com muitos mais significados e leituras do que esses dois!).</p>
+                            <br>
+                            <p>Não é muito eficiente tentar se lembrar de dezenas de informações sobre apenas dois caracteres. O que recomendo é reconhecer a palavra "水気" (mizuke) como "umidade" e, eventualmente, você verá esses kanjis em outras palavras e contextos. Com o tempo, você terá uma noção intuitiva do significado de cada um. Estudando dessa forma, você aprenderá muito mais conteúdo e em muito menos tempo.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>3. O básico de gramática do japonês</h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>A gramática japonesa é diferente das línguas ocidentais. Os verbos geralmente vêm no final das frases, e há várias partículas que indicam a função das palavras na frase. Em geral, o mais importante vem no final da frase, e o que vem antes é complemento. No português, é o contrário. 
+                            Por ter uma estrutura tão diferente, sugiro fortemente que você aprenda pelo menos o básico de gramática, e para isso recomendo fortemente o <a href="https://docs.google.com/document/d/1-PvqBZxUzCkxBRw8PxUD4IlDrewP0j1B8EFxvKCBcXc/edit#heading=h.j2zvf68bp9i8" target="_blank">Guia do Tae Kim</a>. Sugiro aprender pelo menos o capítulo 3 (Gramática Básica), e o restante você pode aprender
+                            conforme estuda por baralhos de Anki, junto com vocabulário e em contexto.   </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>4. Agora você está pronto para consumir conteúdo nativo e utilizar baralhos de anki! Veja como continuar :)</h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Aprendeu Hiragana, Katakana, e sabe o básico do básico de gramática?
+                               Se a resposta é sim, você já está pronto para consumir conteúdo nativo!
+                            <br>
+                               <br>
+
+                               O fluxo que recomendo é: baixe um baralho de Anki (ou crie o seu como ensinei no tópico 1), e comece a revisar as cartas. Provavelmente as cartas só terão o áudio, imagem e texto em japonês, sem tradução. Então pesquise pelo significado das palavras que não sabe e dos pontos gramaticais que não sabe.
+                               Se você fez o capítulo 3 do guia do Tae Kim, já ficará bastante intuitivo o que é um vocabulário comum e o que é um ponto gramatical. Edite a carta com todas as informações que aprendeu, e continue revisando as cartas e editando as cartas novas com as informações até terminar o baralho. De início, recomendo deixar um limite de 20 cartas novas diárias no máximo, pois elas vão acumulando e pode virar uma bola de neve se ficar algum dia sem revisar.
+                                <br> <br>
+                                Se você for direto do tópico 3 para baralhos prontos de anime, pode ser que fique muito massante dependendo do anime que escolher, e pode ser que você tenha que editar todas as cartas, já que ainda não tem vocabulário.
+                                O que muitas pessoas fazem e eu também recomendo é baixar o baralho Core 2k, que é um deck curado com as palavras e pontos gramaticais mais frequentemente encontrados no japonês. Depois que terminar ele, ficará muito mais fácil de seguir com o conteúdo nativo! 
+                                <br>
+                                <a href="https://ankiweb.net/shared/info/2141233552" target="_blank">[Link do baralho do Core 2k]</a> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>Este site foi desenvolvido por Eduardo Weber no projeto de imersão da Alura com Google Gemini.
+            Este projeto é não comercial e tem fins educativos. Todos os direitos de propriedade intelectual dos conteúdos utilizados pertencem aos seus respectivos autores e proprietários.</p>
+            <p>Créditos pela imagem de fundo: <a href="https://www.reddit.com/user/LennSan/">LennSan</a>.
+            Os dados sobre os animes (como título, nível de dificuldade e link do baralho do anki) foram coletados a partir da tabela disponibilizada pelo <a href="https://www.patreon.com/JoMako">Jo Mako</a></p>
+        </footer>
+    </div>
+    <!-- Link para o arquivo javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
